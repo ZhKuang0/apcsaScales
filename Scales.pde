@@ -1,5 +1,5 @@
 void setup() {
-  size(500,500);  //feel free to change the size
+  size(510,510);  //feel free to change the size
   noLoop(); //stops the draw() function from repeating
 }
 void draw(){
@@ -10,8 +10,8 @@ void draw(){
  }
 }
 void scale(int c, int cl) {
-  int random = (int)Math.random() * 2550;
-  fill(0,random,0);
-  ellipse(c,cl,1,1);
+  fill((int)(Math.random() * 10) * 255,(int)(Math.random() * 10) * 255,(int)(Math.random() * 10) * 255);
+  beginShape();
+  ellipse(c,cl,10,10);
+  curveVertex(0,cl);
 }
-
