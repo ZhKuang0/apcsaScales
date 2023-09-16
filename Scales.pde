@@ -10,7 +10,8 @@ void draw(){
  }
 }
 void scale(int c, int cl) {
-  fill(0,255,0);
-  ellipse(c,cl,1,1); // i just made background green but O (n^2)
+  int random = (int)Math.random() * 2550;
+  fill(0,random,0);
+  ellipse(c,cl,1,1);
 }
 
